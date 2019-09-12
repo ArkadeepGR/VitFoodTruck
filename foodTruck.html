@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Food Truck VIT</title>
+	<style>
+		.bg{
+			background-image:url(bg4.gif);
+			background-repeat:nrepeat-x;
+			margin:0px;
+			border-radius: 0 !important;
+		}
+		.white{
+			color:white;
+			font-size:150px;
+			font-weight:bolder;
+			text-shadow:5px 5px red;
+		}
+		.offer{
+			background-color:#343A40;
+			margin:0px;
+			color:white;
+			text-shadow:4px 4px 0px green;
+			border-radius: 0 !important;
+		}
+		.offerTable{
+			color:yellow;
+			font-size:40px;
+			font-weight:bolder;
+			text-shadow:3px 3px 0px black;
+		}
+		#orderNow{
+		color:yellow;
+		width:300px;
+		height:100px;
+		background-color:#DC3545;
+		margin-left:100px;
+		margin-top:100px;
+		border:none;
+		border-radius:20px 0px 20px 0px;
+		box-shadow:3px 3px 1px yellow;
+		}
+		#orderNow:hover{
+			color:white;
+			box-shadow:3px 3px 3px white;
+		}
+		.sp{
+			margin-left:40px;
+			font-size:60px;
+		}
+	</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+  <img src="truck2.png" width="50" height="50" alt="">
+ <span style="padding:5px;position:relative;top:8px;">VIT Food Truck</span>
+  </a>
+    <ul class="navbar-nav mr-auto" style="position:relative;top:5px;">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home<span class="sr-only"></span></a>
+      </li>
+	   <li class="nav-item active">
+        <a class="nav-link" href="#">Menu<span class="sr-only"></span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="#">Place Order<span class="sr-only"></span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="aboutUs.html">About us<span class="sr-only"></span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="#">Locate us<span class="sr-only"></span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="#">Contact us<span class="sr-only"></span></a>
+      </li>
+    </ul>
+</nav>
+<div class="jumbotron bg">
+<img src="truck2.png" width="100" height="100" alt="" id="truck">
+  <h1 class="display-4 white">VIT Food Truck</h1>
+  <hr class="my-4 white">
+ <a class="btn btn-danger btn-lg"   style="box-shadow:5px 5px 1px blue;" href="#" role="button"><img src="truck2.png" width="50" height="50" alt="" id="truck"><span style="position:relative;top:7px;padding-left:5px;">Place Order Now >><span></a>
+</div>
+<div class="jumbotron offer">
+  <h1 class="offer sp">Todays Offer</h1>
+  <table cellpadding="5px"style="margin:0px auto; margin-top:70px;" class="offerTable">
+	<tr>
+		<td width="200px"><img src="burger.png" width="300px"></td>
+		<td width="200px"><img src="plus.png" height="100px" style="margin-left:50px;"></td>
+		<td width="200px"><img src="drink.png" height="300px"></td>
+		<td width="200px"><img src="plus.png" height="100px" style="margin-left:50px;"></td>
+		<td width="200px"><img src="fries.png" height="300px"></td>
+	</tr>
+	<tr>
+		<td colspan="3"><br>Get 30% off on any Burger + Drink + Fries combo.</td>
+		<td colspan="2"><input type="button" id="orderNow" value="Order now !"></td>
+	</tr>
+  </table>
+</div>
+  
+    </body>
+</html>
