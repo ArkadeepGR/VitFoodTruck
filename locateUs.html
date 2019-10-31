@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      #map {
+        height:600px; 
+        width:80%; 
+		margin:0px auto;
+		box-shadow:6px 3px 0px black;
+		border-radius:10px;
+       }
+	   .bg{
+		margin:0px !important;
+	   }
+    </style>
+	<title>Locate us</title>
+  </head>
+  <body>
+    
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+  <img src="truck2.png" width="50" height="50" alt="">
+ <span style="padding:5px;position:relative;top:8px;">VIT Food Truck</span>
+  </a>
+    <ul class="navbar-nav mr-auto" style="position:relative;top:5px;">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
+      </li>
+	   <li class="nav-item active">
+        <a class="nav-link" href="#">Menu<span class="sr-only"></span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="#">Place Order<span class="sr-only"></span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="aboutUs.html">About us<span class="sr-only"></span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="#">Locate us<span class="sr-only"></span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="contact.html">Contact us<span class="sr-only"></span></a>
+      </li>
+    </ul>
+  </nav>
+  <div class="jumbotron bg">
+	 <h1 class="display-4 white">We are here</h1>
+	 <hr>
+	 <br><br>
+	 
+	 <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+
+function initMap() {
+  // The location of Uluru
+ //  var us = {lat: 12.9700932, lng:  79.1552882}; //GDN
+ var us = {lat: 12.969663, lng:  79.158207}; //Greenos
+ //  var us = {lat: 12.970985, lng:  79.159198}; //tt
+  // var us = {lat: 12.971803, lng:  79.164297}; //sjt lawn
+
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 18, center: us});
+  var marker = new google.maps.Marker({position: us, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo-WJ9L66EfHOcH3Tc_difUug0-3aIQVs&callback=initMap">
+    </script>
+	 
+  </div>
+	
+    
+  </body>
+</html>
